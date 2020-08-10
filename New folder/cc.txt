@@ -1,0 +1,4 @@
+name,roll,address,phone-no
+hasan,1,dhaka,017
+jamal,2,dhaka,018
+kamal,3,barisal,019

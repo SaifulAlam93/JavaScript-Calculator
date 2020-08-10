@@ -1,0 +1,481 @@
+<html>
+	<head>
+    	<title>Hero Alom</title>
+        <link rel="stylesheet" href="style.css" media="all" />
+
+    </head>
+    <body>
+    	<header>
+            <div id="header">
+        	<h1 >About Me</h1>
+            <div align="right">
+                <a href="index.html">Home</a>  
+                <a href="exp.html">Exprience</a>  
+                <a href="child.html">Childhood</a> 
+                <a href="youth.html">Youth</a>
+                <a href="contact.html">Contact</a>
+                <a href="form.html">Submit CV</a>
+            </div>
+            </div>
+        </header>    
+    	<div align="center">
+        	<font size="+3"><strong>Please Submit Your CV</strong></font><br />
+            <small>Bangladesh Election Comission<br />
+            207, Agargao, Dhaka-1220, Bangladesh<br />
+            Mobile: 420420420, Email: electioncommission@info.com </small>
+        </div>
+        <hr />
+    	<form action="" method="post">
+          <fieldset>  
+          	 
+        	<h3>Personal Information</h3>
+            <hr />
+        	<table width="900" cellspacing="10">
+            	<tr>
+                	<td><label>Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter Your Name" required disabled /></td>
+                    <td>Father's Name</td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Enter Your Father's Name"  /></td>
+                    
+                </tr>
+            	<tr>
+                	<td><label>Mother's Name:</label></td>
+                    <td><input type="text" id="mname" name="mname" placeholder="Enter Your Mother's Name"  /></td>
+                    <td>Spouse Name</td>
+                    <td><input type="text" id="sname" name="sname" placeholder="Enter Your Spouse Name"  /></td>
+                    
+                </tr> 
+            	<tr>
+                    <td>Email</td>
+                    <td><input type="email" id="sname" name="sname" placeholder="Enter Your Spouse Name"  /></td>
+                	<td><label>Date Of Birth:</label></td>
+                    <td><input type="date" id="mname" name="mname" placeholder="Date of Birth"  /></td>                    
+                </tr> 
+                
+            	<tr>
+                    <td>Present Address:</td>
+                    <td><textarea id="paddress" name="paddress" placeholder="Enter Present Address" /></textarea></td>
+                	<td><label>Permanent Address:</label></td>
+                    <td><textarea id="peraddress" name="peraddress" placeholder="Enter Present Address"  /></textarea></td>                    
+                </tr> 
+                
+            	<tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="number" id="mob" name="mob" placeholder="Enter Your Mobile Number"  /></td>
+                	<td><label>Telephone Number:</label></td>
+                    <td><input type="number" id="phone" name="phone" placeholder="Enter Your Telephone Number"  /></td>                    
+                </tr>
+                
+            	<tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                    	<input type="radio" id="gender" name="gender" checked value="male" />Male
+                        <input type="radio" id="gender" name="gender"  value="female" />Female
+                    	<input type="radio" id="gender" name="gender"   value="common" />Common                        
+                        </td>
+                	<td><label>Nationality:</label></td>
+                    <td>
+                    	<select id="nat" name="nat">
+
+							<option value="">Select</option> 
+							<optgroup label="Asia">
+                        	<option value="bangladeshi">Bangladeshi</option> 
+                        	<option value="Indian">Indian</option> 
+                        	<option value="Pakistani">Pakistani</option> 
+                        	<option value="Nepali">Nepali</option> 
+                            </optgroup> 
+							<optgroup label="Europe">
+                        	<option value="UK" selected>UK</option> 
+                        	<option value="Germany">Germany</option> 
+                        	<option value="Italy">Italy</option> 
+                        	<option value="Dutch">Dutch</option>
+                            </optgroup> 
+							<optgroup label="Africa">
+                        	<option value="Egypt">Egypt</option> 
+                        	<option value="Nigeria">Nigeria</option> 
+                        	<option value="Uganda">Uganda</option> 
+                        	<option value="Libia">Libia</option>
+                            </optgroup>                        
+                        </select>
+                    </td>                    
+                </tr>                                                                      
+                
+                
+            	<tr>
+                    <td><label>Marital Status:</label></td>
+                    <td>
+                    	<input type="radio" id="ms" name="ms" value="Married" />Married
+                        <input type="radio" id="ms" name="ms"  value="Unmarried" checked />Unmarried
+                    	<input type="radio" id="ms" name="ms"   value="Divorced" />Divorced                        
+                        </td>
+                	<td><label>Religion:</label></td>
+                    <td>
+                    	<select id="rg" name="rg">
+Others                      <option value="">Select</option> 
+                        	<option value="Hindu">Hindu</option> 
+                        	<option value="Christian">Christian</option> 
+                        	<option value="Budhist">Budhist</option> 
+                        	<option value="Others">Others</option> 
+                        
+                        </select>
+                    </td>                    
+                </tr>                
+
+
+               	<tr>
+                    <td><label>National ID:</label></td>
+                    <td>
+						<input type="number" id="nid" name="nid" placeholder="Enter Your Mobile Number"  />                       
+                        </td>
+                	<td><label>Your Skill:</label></td>
+                    <td>
+                    	<select id="skill" name="skill" multiple size="6">
+Others                      <option value="">Select</option> 
+							
+                        	<option value="IT">IT</option> 
+                        	<option value="Accounting">Accounting</option> 
+                        	<option value="Finance">Finance</option> 
+                        	<option value="Management">Management</option>
+                        	<option value="HR">HR</option>
+                                                                                 
+                        </select>
+                    </td>                    
+                </tr> 
+                
+            	<tr>
+                    <td><label>Hobby:</label></td>
+                    <td>
+						<input type="checkbox" id="hobby" name="hobby"  />Eat 
+						<input type="checkbox" id="hobby" name="hobby"  />Sleep
+						<input type="checkbox" id="hobby" name="hobby"  />Travel						
+                        <input type="checkbox" id="hobby" name="hobby"  />Study						
+                        <input type="checkbox" id="hobby" name="hobby"  />Video Game                                                                       
+                        </td>
+                	<td><label>Photo:</label></td>
+                    <td>
+						<input type="file" id="file" name="file" />
+                    </td>                    
+                </tr> 
+
+            	<tr>
+                    <td><label>Your Web URL:</label></td>
+                    <td>
+						<input type="url" id="url" name="url" />                                                                       
+                        
+                	
+                    </td>
+                    <td><label>Your Skill Range(1-10):</label></td>
+                    <td>
+						IT Skill: <input type="range" name="points" min="0" max="10" /><br />
+                        English: <input type="range" name="points" min="0" max="10" /><br />
+                        Communication: <input type="range" name="points" min="0" max="10" />
+                    </td>                    
+                                        
+                </tr>                 
+                                                      
+                <tr>
+                	<td>&nbsp;</td>
+                    <td>&nbsp;</td>
+
+                	<td><input type="submit" value="Submit" id="submit" name="submit" /><input type="button" value="Reset" id="button" name="button" /></td> 
+                                    	<td>&nbsp;</td>
+               
+                </tr>    
+            </table>
+            </fieldset>
+            <br />
+            <fieldset>
+            	<h3>Account Information</h3>
+            	<hr />
+                <table width="900" cellspacing="10">
+                	<tr>
+                    	<td><label>User Name:</label></td>
+                        <td><input type="text" id="uname" name="uname" /></td>
+                        <td><label>Password:</label></td>
+                        <td><input type="password" id="pass" name="pass" /></td>
+                        <td><label>Re Type Password:</label></td>
+                        <td><input type="password" id="rpass" name="rpass" /></td>                        
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+            	<h3>Education Information</h3>
+            	<hr />
+            	<table>
+                	<tr>
+                    	<td>Title</td>
+                        <td>
+                        	<input list="titles" name="title" />
+                            <datalist id="titles">
+                            	<option value="SSC" />
+                            	<option value="HSC" />
+                            	<option value="BSC" />
+                            	<option value="MSC" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td>
+                    	<td>Institute</td>
+                        <td>
+                        	<input list="ins" name="inst" />
+                            <datalist id="ins">
+                            	<option value="Dhaka University" />
+                            	<option value="Dhaka Board" />
+                            	<option value="Rjshahi Board" />
+                            	<option value="Khula Board" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td> 
+                    	<td>Result</td>
+                        <td>
+                        	<input list="rs" name="res" />
+                            <datalist id="rs">
+                            	<option value="A+" />
+                            	<option value="A" />
+                            	<option value="A-" />
+                            	<option value="B+" />
+                            	<option value="B" />
+                            	<option value="C" />
+                                
+                            </datalist> 
+                        </td>                    	
+                        <td>Year</td>
+                        <td>
+                        	<input list="yr" name="yer" />
+                            <datalist id="yr">
+                            	<option value="2005" />
+                            	<option value="2006" />
+                            	<option value="2007" />
+                            	<option value="2008" />
+                            	<option value="2009" />
+                            	<option value="2010" />
+                                
+                            </datalist> 
+                        </td>                                               
+                    </tr>
+                	<tr>
+                    	<td>Title</td>
+                        <td>
+                        	<input list="titles" name="title" />
+                            <datalist id="titles">
+                            	<option value="SSC" />
+                            	<option value="HSC" />
+                            	<option value="BSC" />
+                            	<option value="MSC" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td>
+                    	<td>Institute</td>
+                        <td>
+                        	<input list="ins" name="inst" />
+                            <datalist id="ins">
+                            	<option value="Dhaka University" />
+                            	<option value="Dhaka Board" />
+                            	<option value="Rjshahi Board" />
+                            	<option value="Khula Board" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td> 
+                    	<td>Result</td>
+                        <td>
+                        	<input list="rs" name="res" />
+                            <datalist id="rs">
+                            	<option value="A+" />
+                            	<option value="A" />
+                            	<option value="A-" />
+                            	<option value="B+" />
+                            	<option value="B" />
+                            	<option value="C" />
+                                
+                            </datalist> 
+                        </td>                    	
+                        <td>Year</td>
+                        <td>
+                        	<input list="yr" name="yer" />
+                            <datalist id="yr">
+                            	<option value="2005" />
+                            	<option value="2006" />
+                            	<option value="2007" />
+                            	<option value="2008" />
+                            	<option value="2009" />
+                            	<option value="2010" />
+                                
+                            </datalist> 
+                        </td>                                               
+                    </tr>
+                	<tr>
+                    	<td>Title</td>
+                        <td>
+                        	<input list="titles" name="title" />
+                            <datalist id="titles">
+                            	<option value="SSC" />
+                            	<option value="HSC" />
+                            	<option value="BSC" />
+                            	<option value="MSC" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td>
+                    	<td>Institute</td>
+                        <td>
+                        	<input list="ins" name="inst" />
+                            <datalist id="ins">
+                            	<option value="Dhaka University" />
+                            	<option value="Dhaka Board" />
+                            	<option value="Rjshahi Board" />
+                            	<option value="Khula Board" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td> 
+                    	<td>Result</td>
+                        <td>
+                        	<input list="rs" name="res" />
+                            <datalist id="rs">
+                            	<option value="A+" />
+                            	<option value="A" />
+                            	<option value="A-" />
+                            	<option value="B+" />
+                            	<option value="B" />
+                            	<option value="C" />
+                                
+                            </datalist> 
+                        </td>                    	
+                        <td>Year</td>
+                        <td>
+                        	<input list="yr" name="yer" />
+                            <datalist id="yr">
+                            	<option value="2005" />
+                            	<option value="2006" />
+                            	<option value="2007" />
+                            	<option value="2008" />
+                            	<option value="2009" />
+                            	<option value="2010" />
+                                
+                            </datalist> 
+                        </td>                                               
+                    </tr>
+                	<tr>
+                    	<td>Title</td>
+                        <td>
+                        	<input list="titles" name="title" />
+                            <datalist id="titles">
+                            	<option value="SSC" />
+                            	<option value="HSC" />
+                            	<option value="BSC" />
+                            	<option value="MSC" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td>
+                    	<td>Institute</td>
+                        <td>
+                        	<input list="ins" name="inst" />
+                            <datalist id="ins">
+                            	<option value="Dhaka University" />
+                            	<option value="Dhaka Board" />
+                            	<option value="Rjshahi Board" />
+                            	<option value="Khula Board" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td> 
+                    	<td>Result</td>
+                        <td>
+                        	<input list="rs" name="res" />
+                            <datalist id="rs">
+                            	<option value="A+" />
+                            	<option value="A" />
+                            	<option value="A-" />
+                            	<option value="B+" />
+                            	<option value="B" />
+                            	<option value="C" />
+                                
+                            </datalist> 
+                        </td>                    	
+                        <td>Year</td>
+                        <td>
+                        	<input list="yr" name="yer" />
+                            <datalist id="yr">
+                            	<option value="2005" />
+                            	<option value="2006" />
+                            	<option value="2007" />
+                            	<option value="2008" />
+                            	<option value="2009" />
+                            	<option value="2010" />
+                                
+                            </datalist> 
+                        </td>                                               
+                    </tr>
+                	<tr>
+                    	<td>Title</td>
+                        <td>
+                        	<input list="titles" name="title" />
+                            <datalist id="titles">
+                            	<option value="SSC" />
+                            	<option value="HSC" />
+                            	<option value="BSC" />
+                            	<option value="MSC" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td>
+                    	<td>Institute</td>
+                        <td>
+                        	<input list="ins" name="inst" />
+                            <datalist id="ins">
+                            	<option value="Dhaka University" />
+                            	<option value="Dhaka Board" />
+                            	<option value="Rjshahi Board" />
+                            	<option value="Khula Board" />
+                            	<option value="BA" />
+                            	<option value="MA" />
+                                
+                            </datalist> 
+                        </td> 
+                    	<td>Result</td>
+                        <td>
+                        	<input list="rs" name="res" />
+                            <datalist id="rs">
+                            	<option value="A+" />
+                            	<option value="A" />
+                            	<option value="A-" />
+                            	<option value="B+" />
+                            	<option value="B" />
+                            	<option value="C" />
+                                
+                            </datalist> 
+                        </td>                    	
+                        <td>Year</td>
+                        <td>
+                        	<input list="yr" name="yer" />
+                            <datalist id="yr">
+                            	<option value="2005" />
+                            	<option value="2006" />
+                            	<option value="2007" />
+                            	<option value="2008" />
+                            	<option value="2009" />
+                            	<option value="2010" />
+                                
+                            </datalist> 
+                        </td>                                               
+                    </tr>                                                                                
+                </table>
+            
+            </fieldset>
+        </form>
+    </body>
+</html>

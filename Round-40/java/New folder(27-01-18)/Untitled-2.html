@@ -1,0 +1,23 @@
+
+<button onclick="goForward()" >Go forword</button>
+
+<script>
+  function goForward(){
+	  window.history.forward();
+	  }
+</script>
+<p id="demo1"></p>
+<script>
+ var x = history.length;
+ document.getElementById("demo1").innerHTML= x; 
+</script>
+
+<button onclick="goBack()" >Go Back</button>
+
+<script>
+ function goBack(){
+	  window.history.back();
+	  }
+</script>
+
+<a href="Untitled-1.html"> click </a>

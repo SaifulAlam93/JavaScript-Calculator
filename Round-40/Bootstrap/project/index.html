@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Car</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" media="all"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:#ffd32a;">CarsShop</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active" style="color:#F00;"><a href="#">Home</a></li>
+      <li class=""><a href="#">BMW</a></li>
+      <li class=""><a href="#">TOYOTA</a></li>
+      <li class=""><a href="#">McLaren</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Others Brand<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#bmw">TATA</a></li>
+          <li><a href="#">HUNDAI</a></li>
+          <li><a href="#">NISHAN</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-user">
+      </span> Sign Up</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#myModal2">
+      <span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<!-- Navigation End -->
+<!-- Slider Stat -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="margin-top:-20px;">
+    <div class="item active">
+      <img src="5.jpg" alt="" style="width:100%;height:400px;">
+    </div>
+
+    <div class="item">
+      <img src="8.jpg" alt="" style="width:100%;height:400px;">
+    </div>
+
+    <div class="item">
+      <img src="1.jpg" alt=""  style="width:100%;height:400px;">
+    </div>
+    
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ <!--Jumbo Tron Start-->
+   <div class="jumbotron" style="padding-left:50px; margin-top:-60px;
+    font-family:'Arial Black', Gadget, sans-serif; height:200px;">
+    <h1 style="color:#2c3e50; font-size:36px; letter-spacing:2px;">Find your Car</h1>
+    <h3 style="color:#2c3e50; font-size:20px;">Number one Shop</h3>
+    <p style="font-size:12px;">
+     Welcome to Carshop, the Isle of Man's
+     original vehicle sourcing specialist.
+     We've been redefining car sales as a family business for over 13 years!
+     </p>
+  
+</div>
+</div>
+<!-- Slider End -->
+<div class="container">
+  <h3> Our popular product <span class="badge badge-secondary" style="color:#F00;
+   background-color:#3F0;">hot</span></h3>
+    <div class="row">
+                    <div id="bmw" class="col-md-4 col-sm-4">
+   <div class="card" style="width:100%">
+    <img class="card-img-top" src="ee.jpg" alt="card img cap" style="height:200px; width:360px;" >
+    <div class="card-body">
+      <h4 class="card-title">BMW</h4>
+        <p class="card-text">Model:650S Spider</p>
+       </div>
+         <ul class="list-group list-group-flush">
+          <li class="list-group-item">Price:$179,000</li>
+          <li class="list-group-item">Discount:0%</li>
+          </ul>
+               <div class="panel-body">
+               <button type="button" class="btn btn-info"
+                data-toggle="collapse" data-target="#demo">Know More..</button>
+                <div id="demo" class="collapse">
+                <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Model: Year2019</li>
+                      <li class="list-group-item">Exterior Colour:Jaune</li>
+                      <li class="list-group-item">Interior Trim: Alcantara Noir</li>
+                      <li class="list-group-item">Odometer: 26,000 kilometres</li>
+                      <li class="list-group-item">Price:$179,000</li>
+                      <li class="list-group-item">Time Out:7 days</li>
+                </ul>
+             </div>
+            </div>
+           </div>
+         </div>
+                    <div class="col-md-4 col-sm-4">
+   <div class="card" style="width:100%">
+    <img class="card-img-top" src="a.jpg" alt="card img cap" style="height:200px; width:360px;" >
+    <div class="card-body">
+      <h4 class="card-title">BMW</h4>
+        <p class="card-text">Model:650S Spider</p>
+       </div>
+         <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Price:$179,000</li>
+                      <li class="list-group-item">Discount:10%</li>
+                      <li class="list-group-item">Model: Year2019</li>
+                      <li class="list-group-item">Exterior Colour:Jaune</li>
+                      <li class="list-group-item">Interior Trim: Alcantara Noir</li>
+                      <li class="list-group-item">Odometer: 26,000 kilometres</li>
+                      <li class="list-group-item">Price:$179,000</li>
+                      <li class="list-group-item">Time Out:7 days</li>
+                      <li class="list-group-item">Discount:10%</li>
+                    <li class="list-group-item"><a href="#" class="btn btn-danger">Add to Cart</a></li>
+                </ul>
+           </div>
+         </div>
+                    <div class="col-md-4 col-sm-4">
+   <div class="card" style="width:100%">
+    <img class="card-img-top" src="jj.png" alt="card img cap" style="height:200px; width:360px;" >
+    <div class="card-body">
+      <h4 class="card-title">McLaren</h4>
+        <p class="card-text">Model:650S Spider</p>
+       </div>
+         <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Price:$179,000</li>
+                      <li class="list-group-item">Discount:10%</li>
+                      <li class="list-group-item">Model: Year2019</li>
+                      <li class="list-group-item">Exterior Colour:Jaune</li>
+                      <li class="list-group-item">Interior Trim: Alcantara Noir</li>
+                      <li class="list-group-item">Odometer: 26,000 kilometres</li>
+                      <li class="list-group-item">Price:$179,000</li>
+                      <li class="list-group-item">Time Out:7 days</li>
+                      <li class="list-group-item">Discount:10%</li>
+                    <li class="list-group-item"><a href="#" class="btn btn-danger">Add to Cart</a></li>
+                </ul>
+            </div>
+           </div>
+         <br/>
+         <br/>
+          </div>
+  <h3> Coning Soon.. <span class="badge badge-secondary" style="color:#FFF;
+   background-color:#F00">New</span></h3>
+      <div class="col-md-4 col-sm-4">
+   <div class="card" style="width:100%">
+    <img class="card-img-top" src="gg.jpg" alt="card img cap" style="height:200px; width:360px;" >
+    <div class="card-body">
+      <h4 class="card-titel">McLaren</h4>
+        <p class="card-text">Model: 570s</p>
+       </div>
+         <ul class="list-group list-group-flush">
+          <li class="list-group-item">cost:$50000</li>
+          <li class="list-group-item">Time Out:7 days</li>
+          <li class="list-group-item">Discount:10%</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">more..</a>
+            <a href="#" class="card-link">Add to cart</a>
+            </div>
+         </div>
+      </div>
+              <div class="col-md-4 col-sm-4">
+   <div class="card" style="width:100%">
+    <img class="card-img-top" src="mm.jpg" alt="card img cap" style="height:200px; width:360px;" >
+    <div class="card-body">
+      <h4 class="card-titel">McLaren</h4>
+        <p class="card-text">Model:432k</p>
+       </div>
+         <ul class="list-group list-group-flush">
+          <li class="list-group-item">cost:$50000</li>
+          <li class="list-group-item">Time Out:7 days</li>
+          <li class="list-group-item">Discount:10%</li>
+          </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">more..</a>
+                <a href="#" class="card-link">Add to cart</a>
+            </div>
+         </div>
+      </div>
+                    <div class="col-md-4 col-sm-4">
+   <div class="card" style="width:100%">
+    <img class="card-img-top" src="ll.png" alt="card img cap" style="height:200px; width:360px;" >
+    <div class="card-body">
+      <h4 class="card-titel">McLaren</h4>
+        <p class="card-text">Model:650S Spider</p>
+       </div>
+         <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Price:$139,000</li>
+                      <li class="list-group-item">Discount:10%</li>
+                      <li class="list-group-item">Model: Year2018</li>
+                      <li class="list-group-item">Exterior Colour:Jaune</li>
+                      <li class="list-group-item">Interior Trim: Alcantara Noir</li>
+                      <li class="list-group-item">Odometer: 26,000 kilometres</li>
+                      <li class="list-group-item">Price:$139,000</li>
+                      <li class="list-group-item">Discount:10%</li>
+                    <li class="list-group-item"><a href="#" class="btn btn-danger">Add to Cart</a></li>
+                                            
+                </ul>
+             </div>
+            </div>
+      </div></div></div></div>
+<!--Tab Panes-->
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h3>Our Other Prducts</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+</ul>
+<div class="tab-content">
+	<div id="home" class="container tab-pane active">
+    	<div class="row">
+        	<div class="col-sm-8">
+            	<h3>Discount Products</h3>
+                <p>Experience shopping mobile phones online in bangladesh at low prices with discount</p>
+                <p>For those who are searching for mobile under 5000 taka, Nokia is popular for its features compared to its features. You can get additional discounts on nokia mobile on series like, Lumia, N series & E series. These phones include Lumia 435, Asha 502, Lumia 730, nokia 3310, etc.</p>
+            </div>
+        	<div class="col-sm-4">
+    <img class="card-img-top" src="ww.jpg" alt="card img cap" style="height:200px; width:360px;" >
+            </div>
+        </div>
+        
+        
+    	
+    </div>
+    <div id="menu1" class="container tab-pane fade">
+        <div class="col-sm-8">
+				<h3>Products with gift</h3>
+                <p>Experience shopping mobile phones online in bangladesh at low prices with discount</p>
+                <p>For those who are searching for mobile under 5000 taka, Nokia is popular for its features compared to its features. You can get additional discounts on nokia mobile on series like, Lumia, N series & E series. These phones include Lumia 435, Asha 502, Lumia 730, nokia 3310, etc.</p>
+            </div>
+        	<div class="col-sm-4">
+               <img class="card-img-top" src="fff.jpg" alt="card img cap" style="height:200px; width:360px;" >
+            </div>
+   	</div>
+    
+    <div id="menu2" class="container tab-pane fade">
+        <div class="col-sm-8">
+				<h3>Products with Coupon</h3>
+                <p>Experience shopping mobile phones online in bangladesh at low prices with discount</p>
+                <p>For those who are searching for mobile under 5000 taka, Nokia is popular for its features compared to its features. You can get additional discounts on nokia mobile on series like, Lumia, N series & E series. These phones include Lumia 435, Asha 502, Lumia 730, nokia 3310, etc.</p>
+            </div>
+            <div class="col-sm-4">
+             <img class="card-img-top" src="ff.jpg" alt="card img cap" style="height:200px; width:360px;" >
+            </div>
+   	</div>
+    </div>
+   </div>
+  </div>
+ </div>          
+     <div id="footer">
+        <div id="f1">
+        <ul>
+          <li><a href="#">About US</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Brance</a></li>
+        </ul>
+        </div>
+        <div id="f2">
+           <p>Contact Us</p>
+           <div>Esat Gulshan, Dhaka-1212</div>
+          <div>Mobile: 01722606674</div>
+          <div>phone: 02736478</div>
+          <div>Fax: 464643@fax.net</div>
+          <div>Email: carshop@car.com</div>
+          <div>Web: www.carshop.com</div>
+        </div>
+                <div id="f3">
+                <p>Social Connection</p>
+    			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div>
+                	<a href="#" class="fa fa-facebook"></a>
+        			<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+					<a href="#" class="fa fa-snapchat-ghost"></a>
+					<a href="#" class="fa fa-skype"></a>
+				</div>
+            </div> 
+       <div id="fend">All Right Reserved By @ SOHEL 2015</div>
+    </div>
+    
+     
+          <!-- modal regestration start-->
+          
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal"> &times;</button>
+               <div class="alert alert-success modal-title">
+     <h3 class="headder3" align="center">SignUp</h3>
+            </div>
+               
+
+
+     <form>
+             <div class="form-group tt">
+               <label>Name:</label>
+               <input type="text" id="name" name="name" class="form-control"/>
+             </div>
+             <div class="form-group tt">
+               <label>Email:</label>
+               <input type="text" id="cemail" name="cemail" class="form-control" />
+             </div>
+             <div class="form-group tt">
+               <label>Password:</label>
+               <input type="Password" id="pass" name="pass" class="form-control" />
+             </div>
+             <div class="form-group tt">
+               <label>Confirm Password:</label>
+               <input type="Password" id="pass" name="pass" class="form-control" />
+             </div>
+             
+              <div class="form-group tt">
+             <label>Mobile:</label>
+             <input type="number" id="num" name="num" class="form-control" />
+             </div>
+             <div class="form-group tt">
+             <label>Gender:</label>
+             <input type="radio" id="num" name="num"/>M
+             <input type="radio" id="num" name="num"/>F
+             </div>
+             <div class="form-group tt">
+             <label>Nationality:</label>
+             <select id="nat" name="nat" class="form-control">
+                <option value="BD">Bangladesh</option>
+                <option value="BB">Barbados</option>
+              </select>
+             </div>
+             <div class="form-group tt">
+               <label>Address:</label>
+               <textarea class="form-control"></textarea>
+             </div>
+            
+             <div class="form-group tt">
+             <button class="btn btn-danger" data-dismiss="modal">Submit</button>
+             
+             </div>
+             </form>
+             
+              </div>
+                </div>
+               </div>
+              </div>
+            
+             <!-- modal login start-->
+          
+          <div class="modal" id="myModal2">
+            <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal"> &times;</button>
+               <div class="alert alert-danger modal-title">
+     <h3 class="headder3" align="center">LogIn</h3>
+            </div>
+     <form>
+             <div class="form-group ">
+               <label>Email:</label>
+               <input type="text" id="cemail" name="cemail" class="form-control" />
+             </div>
+             <div class="form-group">
+               <label>Password:</label>
+               <input type="Password" id="pass" name="pass" class="form-control" />
+             </div>
+             <div class="checkbox">
+             <label><input type="checkbox">Remember me</label>
+             </div>
+             <div class="form-group">
+             <button class="btn btn-primary">submit</button>
+             </div>
+           </form>
+             
+                </div>
+               </div>
+              </div>
+
+ 

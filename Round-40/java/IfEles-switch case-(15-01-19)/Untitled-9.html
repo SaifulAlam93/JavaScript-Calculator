@@ -1,0 +1,52 @@
+<script>
+ function check(){
+	 var name = document.frm.name.value;
+	 if(name==""){
+		 
+		 document.getElementById("ename").innerHTML="Enter Name";
+	            }
+	 else {
+		 document.getElementById("ename").innerHTML="";
+		 }
+		 var password = document.frm.password.value;
+		if(password==""){
+			document.getElementById("epassword").innerHTML="Enter Password";
+		}
+	 
+	 else if (password.length<8 || password.length>12){
+		 document.getElementById("epassword").
+		 innerHTML="password should within 8 to 12 character";
+		 }
+		 else {
+			 document.getElementById("epassword").innerHTML="";
+			 }
+	 }
+</script>
+
+<body>
+  <form id"frm" name="frm">
+  <table>
+    	<tr> 
+        	<td>Name</td>
+            <td>
+            	<input type="text" name="name" /> 
+                <span name="ename" id="ename"></span> 
+            </td>
+        </tr>
+        <tr>
+           <td>password</td>
+          <td>
+         <input type="password" id="password" name="password">
+         <span id="epassword" name="epassword"></span>
+          </td>
+       </tr>
+       <tr>
+          <td>&nbsp;</td>
+       <td> 
+          <input type="button" name="button" id="button" value="Submit">
+       </td>
+     </tr>
+     
+  </table>
+
+</body>

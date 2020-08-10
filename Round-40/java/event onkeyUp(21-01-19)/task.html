@@ -1,0 +1,22 @@
+<form>
+First Number: <input type="text" id="first" name="first" /><br/><br/>
+Second Number: <input type="text" id="second" name="second"/><br/><br/>
+Result: <input type="text" id="third" name="third"/><br/><br/>
+<input type="button" id="submit" name="submit" value="submit" onClick="sum()"/>
+
+</form>
+<script>
+ /*3 ta box thakbe, 1st o 2nd box ar input value
+botton a click korle
+jog hoye 3rd box a dekhabe*/
+ 
+   function sum(){
+	  var first = document.getElementById("first").value
+	  var second = document.getElementById("second").value
+	  var third = parseInt(first)+ parseInt(second);
+	  document.getElementById("third").value=third;
+	  
+	   }
+	   
+
+</script>

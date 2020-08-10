@@ -1,0 +1,423 @@
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+ul {
+  animation: josh 3s;  
+}
+@keyframes josh {
+  from {
+    margin-top: 100%;
+	width: 300%; 
+	  }
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+#pop {
+  animation: move 3s;  
+}
+.jumbotron {
+  animation: move 3s;  
+}
+@-webkit-keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#com {
+  animation: rht 3s;  
+	
+}
+@-webkit-keyframes rht {
+  from {
+    margin-right: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+  </style>
+<!-- Navigation start -->  
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html">Moms & Kids</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home </a>
+    </li>  
+    <li class="nav-item">
+      <a class="nav-link" href="#pop">Popular </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#com">Comming</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#other">Others</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="food.html">Food</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cloth.html">Cloth</a>
+    </li> 
+    <li class="nav-item">
+      <a class="nav-link" href="cos.html">Cosmetic</a>
+    </li> 
+    <li class="nav-item">
+      <a class="nav-link" href="#con" data-toggle="modal" data-target="#myModal">Contact</a>
+    </li>                  
+  </ul>
+</nav>
+<!-- Navigation End -->
+<!-- Slider Stat -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="4.jpg" alt="" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpg" alt="" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" alt="" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<!-- Jumbo Tron Start -->
+  <div class="jumbotron" style="padding-left: 50px;margin-top:-60px;font-family:Arial, Helvetica, sans-serif;height:200px;">
+    <h1 style="color:tomato; font-size:36px; letter-spacing:2px;" >Kids And Moms</h1> 
+    <h3 style="font-size:20px;">A one stop shop for Mother and Baby</h3>     
+    <p style="font-size:12px;">Kids and Moms is the pioneer in premium one stop Mother and Child care that you can trust. Offering products ranging from the carefully selected baby food and ...</p>
+  </div>
+<!-- Jumbo Tron End -->  
+</div>
+<!-- Slider End -->
+
+<!-- Popular Products Start -->
+<div class="container"  id="pop">
+<h3 class="well">Our Popular Products<span class="badge badge-secondary">Hot</span></h3>
+<hr />	
+    <div class="row">
+    	<div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top " src="p1.png" alt="Card image cap" >
+              <div class="card-body">
+                <h5 class="card-title">Similac 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cost: 500/=</li>
+                <li class="list-group-item">Expire Date: 1.10.2025</li>
+                <li class="list-group-item">Weight: 500ml</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">More ..</a>
+                <a href="#" class="card-link">Add To Cart</a>
+              </div>
+           </div> 
+        </div>
+        <!-- 2nd card -->
+    	<div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="p2.png" alt="Card image cap" >
+              <div class="card-body">
+                <h5 class="card-title">Similac 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cost: 500/=</li>
+                <li class="list-group-item">Expire Date: 1.10.2025</li>
+                <li class="list-group-item">Weight: 500ml</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">More ..</a>
+                <a href="#" class="card-link">Add To Cart</a>
+              </div>
+           </div> 
+        </div>
+        <!-- 3rd card -->
+    	<div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="p3.png" alt="Card image cap" >
+              <div class="card-body">
+                <h5 class="card-title">Similac 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cost: 500/=</li>
+                <li class="list-group-item">Expire Date: 1.10.2025</li>
+                <li class="list-group-item">Weight: 500ml</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">More ..</a>
+                <a href="#" class="card-link">Add To Cart</a>
+              </div>
+           </div> 
+        </div>                
+    </div>
+</div>
+<!-- Popular Products End -->
+
+<!-- Comming Products Start -->
+<hr/>
+<div class="container"  id="com">
+<h3 class="well">Our Comming Products<span class="badge badge-secondary">New</span></h3>
+<hr />	
+    <div class="row">
+    	<div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top " src="c1.png" alt="Card image cap" >
+              <div class="card-body">
+                <h5 class="card-title" align="center">Similac 3</h5>
+
+              </div>
+
+
+           </div> 
+        </div>
+        <!-- 2nd card -->
+    	<div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="c2.png" alt="Card image cap" >
+              <div class="card-body">
+                <h5 class="card-title" align="center">Similac 3</h5>
+
+              </div>
+
+
+           </div> 
+        </div>
+        <!-- 3rd card -->
+    	<div class="col-md-4 col-sm-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="c3.png" alt="Card image cap" >
+              <div class="card-body">
+                <h5 class="card-title" align="center">Similac 3</h5>
+
+              </div>
+
+
+           </div> 
+        </div>                
+    </div>
+</div>
+<!-- Comming Products End -->
+<hr />
+<!-- others start -->
+<div class="container" id="other">
+  <h2>About Other Products</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Discount</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Gift</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Coupon</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>Discount Products</h3>
+      <div class="row">
+          <div class="col-md-8 col-sm-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          
+          </div>
+          <div class="col-md-4 col-sm-4">
+    			<img src="p1.png" style="width:100%;height:200px;" />
+          </div>
+      </div>
+      <hr />
+      <div class="row">
+          <div class="col-md-8 col-sm-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          
+          </div>
+          <div class="col-md-4 col-sm-4">
+    			<img src="p2.png" style="width:100%;height:200px;" />
+          </div>
+      </div>      	      
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Products with gift</h3>
+      <div class="row">
+          <div class="col-md-8 col-sm-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          
+          </div>
+          <div class="col-md-4 col-sm-4">
+    			<img src="p3.png" style="width:100%;height:200px;" />
+          </div>
+      </div>
+      <hr />
+      <div class="row">
+          <div class="col-md-8 col-sm-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          
+          </div>
+          <div class="col-md-4 col-sm-4">
+    			<img src="c3.png" style="width:100%;height:200px;" />
+          </div>
+      </div>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Products with cupon</h3>
+      <div class="row">
+          <div class="col-md-8 col-sm-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          
+          </div>
+          <div class="col-md-4 col-sm-4">
+    			<img src="c1.png" style="width:100%;height:200px;" />
+          </div>
+      </div>
+      <hr />
+      <div class="row">
+          <div class="col-md-8 col-sm-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          
+          </div>
+          <div class="col-md-4 col-sm-4">
+    			<img src="c2.png" style="width:100%;height:200px;" />
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- others end -->
+<!-- footer start -->
+        <div id="footer">
+        	<div id="footer1">
+              <ul>
+                <li><a href="#" class="m_title">About US</a></li>
+                <li><a href="#"  class="m_title">Contact US</a></li>
+                <li><a href="#"  class="m_title">Blog</a></li>
+                <li><a href="#" class="m_title">Login</a></li>
+                <li><a href="#" class="m_title">Application</a></li>
+        		<li><a href="#" class="m_title">Forum</a></li>
+              </ul>
+            </div>
+        	<div id="footer2">
+               	<p>Contact Us</p>
+                <div>191, East Gulshan, Road No-95, House No:120, Postal Code: 1290, Dhaka, Bangladesh</div>
+                <div>Moble: xxxxxxcc</div>
+                <div>Phone: xxxxxxcc</div>
+                <div>Fax: xxxxxxcc</div>
+                <div>Email: xxxxxxcc</div>
+                <div>Web: xxxxxxcc</div>
+            </div>
+        	<div id="footer3">
+                <p>Social Connection</p>
+    			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div>
+                	<a href="#" class="fa fa-facebook"></a>
+        			<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+					<a href="#" class="fa fa-snapchat-ghost"></a>
+					<a href="#" class="fa fa-skype"></a>
+				</div>
+            </div>                        	
+        	<div id="fln">
+            <small>All Rights Reserved By @Sumaiya 2018</small>
+            </div>
+        </div>
+
+    </div>
+<!-- footer end -->    
+<!-- modal start -->
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Contact Information</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+        	<div class="col-md-4 col-sm-4">
+            	<div>191, East Gulshan, Road No-95, House No:120, Postal Code: 1290, Dhaka, Bangladesh</div>
+                <div>
+                Moble: xxxxxxcc<br />
+				Phone: xxxxxxcc<br />
+				Fax: xxxxxxcc<br />
+				Email: xxxxxxcc<br />
+				Web: xxxxxxc
+                </div>
+            </div>
+            <div style="border-right: 1px solid #333; float: left"></div>
+        	<div class="col-md-7 col-sm-7" style="float: left">
+                  <div class="form-group">
+                    <label for="email">Name :</label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Subject:</label>
+                    <input type="text" class="form-control" id="pwd">
+                  </div>
+                  <div class="checkbox">
+                    <label for="pwd">Description:</label>
+                    <textarea class="form-control"> </textarea></label>
+                  </div>
+                  <br />
+                  <div class="form-group">
+                  <button type="submit" class="btn btn-warning">Submit</button>
+                  </div>            
+            </div>            
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+

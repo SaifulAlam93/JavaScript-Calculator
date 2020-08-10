@@ -1,0 +1,24 @@
+<script>
+// ata diya jor bijor sonkha bahir kora jai
+var nums = [1,2,12,44,43,34,30,11,19,23,54,74,9];
+var evens = [];
+var odds = [];
+
+var evenNumbers = function(nums) {
+    for (var i = 0; i < nums.length; i++) {
+
+        if ((nums[i] % 2) === 0) {
+            evens.push(nums[i]);
+                document.write(evens);
+        }
+        else {
+            odds.push(nums[i]);
+                document. write(odds);
+        }
+    }
+};
+
+evenNumbers(nums);
+alert(evens);
+alert(odds);
+</script>

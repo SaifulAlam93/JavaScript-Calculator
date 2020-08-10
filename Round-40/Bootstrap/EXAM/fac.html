@@ -1,0 +1,15 @@
+<script>
+	function fac(){
+		var num = document.getElementById('num').value;
+		var fac=1;
+		for(i=num;i>=1;i--){
+			fac = fac*i;	
+		}
+		document.write("The factorial is: "+fac);
+	}
+</script>
+
+<form>
+	Enter Number <input type="text" id="num" name="num" />
+    <input type="button" id="button" name="button" onClick="fac()" value="Factorial" />  
+</form>

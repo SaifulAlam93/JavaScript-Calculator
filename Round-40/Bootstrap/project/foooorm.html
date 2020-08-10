@@ -1,0 +1,41 @@
+
+<script>
+ function check(){
+	 var name =document.frm.nme.value;
+	 var flag=0;
+	 var msg="";
+	 
+	 if(name==""){
+		 document.getElementById("ename").innerHTML="ENTER YOUR NAME";
+		 flag=1;
+	 }
+	 else{
+		ename.innerHTML="";
+		msg+="your name: "+name+"<br>" 
+	 }
+	 
+	 if(flag==0){
+		 var x= window.open("","","height=200,width=500");
+		x.document.write(msg+"<br>");
+	 }
+ }
+
+</script>
+<form id="frm" name="frm">
+<table align="center">
+	<tr>
+		<td>Name:</td>
+        <td>
+        	<input type="text" name="nme" id="nme">
+            <span id="ename" name="ename"></span>
+        </td>    
+    </tr>
+    	<tr>
+		<td>&nbsp;</td>
+        <td>
+        	<input type="button" name="button" id="button" value="Submit" onClick="check()"/>
+        </td>    
+    </tr>    
+</table>
+</form>
+

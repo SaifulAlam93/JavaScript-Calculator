@@ -1,0 +1,15 @@
+<button onclick="openWindow()">open "myWindow"</button>
+<button onclick="moveWin()">move "myWindow"</button>
+
+
+<script>
+   var myWindow;
+   function openWindow(){
+	 myWindow=window.open("","myWindow","height=200,width=500");
+	 myWindow.document.write("<p>this is'myWindow'</p>");
+	 }
+   function moveWin(){
+	    myWindow.resizeBy(300,150);
+		myWindow.focus()
+	   }	 
+</script>

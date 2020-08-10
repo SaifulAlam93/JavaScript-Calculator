@@ -1,0 +1,112 @@
+<script>
+	function check(){
+		var name = document.frm.name.value;
+		var pass = document.frm.pass.value;
+		var epassword = document.frm.epassword.value;
+		var eemail =  document.frm.eemail.value;				
+		var che = document.frm.che;
+		var flag = 0;
+		var msg ="";
+
+		}
+		if(name==""){
+		document.getElementById("uname").innerHTML="Enter Name";
+		flag = 1;
+		}
+		else {
+		document.getElementById("uname").innerHTML="";
+		msg=msg+"your name: "+name+"<br/>"
+		}
+		if (flag==0){
+			var w=window.open("","","height=400,width=500");
+			    w.document.write(msg);
+			}
+				if(pass==""){
+		document.getElementById("epassword").innerHTML="Enter Password";
+		flag = 1;
+		}
+		else if(pass.length<8 || pass.length>12){
+		document.getElementById("epassword").innerHTML="Password should be within 8 to 12 character";
+		flag = 1;			
+		}
+		else {
+		document.getElementById("epassword").innerHTML="";
+		msg=msg+"your pass: "+pass+"<br/>"
+		}
+		if(password!=pass){
+		document.getElementById("epassword").innerHTML="Password does not match";
+		flag = 1;
+		}
+		else {
+		document.getElementById("epassword").innerHTML="";
+		}
+
+     	}
+</script>
+
+
+<body>
+<form id="frm" name="frm">
+  <table align="center">
+    <tr>
+      <td>User name:</td>
+      <td><input type="text" id="name" name="name">
+      <span id="uname" name="uname"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>password:</td>
+      <td><input type="password" id="pass" name="pass">
+      <span id="epass" name="epass"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>Re-password:</td>
+      <td><input type="password" id="passwoed" name="password">
+      <span id="epassword" name="epassword"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="email" id="email" name="email" value="">
+      <span id="eemail" name="eemail"></span>
+      </td>
+    </tr>
+        <tr>
+      <td>PR TSP:</td>
+        <td>
+        	<input type="checkbox" name="che" id="che" value="AITL">AITL
+        	<input type="checkbox" name="che" id="che" value="BITL">BITL        	
+            <input type="checkbox" name="che" id="che" value="CITL">CITL            
+            <input type="checkbox" name="che" id="che" value="DITL">DITL
+           
+            <span id="eche" name="eche"></span>
+        </td>
+        </tr>
+        	<tr>
+		<td>Subject:</td>
+        <td>
+        	<select id="sub" name="sub">
+            	<option value="">Select</option>
+            	<option value="WDPF">WDPF</option>
+            	<option value="csharp">Csharp</option>
+            <span id="esub" name="esub"></span>
+        </td>    
+    </tr>
+        <tr>
+      <td>About IDB:</td>
+      <td><textarea id="textarea" name="textarea"></textarea>
+      <span id="etextarea" name="etextarea"></span>
+      </td>
+    </tr>
+    <tr>
+		<td>&nbsp;</td>
+        <td>
+        	<input type="button" name="button" id="button" value="Submit" onClick="check()"/>
+        </td>    
+    </tr>    
+</table>      
+ 
+
+</form>
+</body>

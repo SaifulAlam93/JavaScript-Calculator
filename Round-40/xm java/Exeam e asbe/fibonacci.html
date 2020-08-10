@@ -1,0 +1,26 @@
+
+<html>
+<head>
+
+</head>
+<script language="javascript">
+	/*var arr = new Array (5,2,8,12,13,15,1,20);
+	for (i=0; i<arr.length; i++){
+		if (arr[i]%2==1){
+			document.write(arr[i]+'<br/>')
+		}
+		}*/
+		
+		function fibonacci (number){
+		var previous_first = 0,
+		previous_second = 1, next = 1;
+		for(var i = 2; i <= number; i++) {
+		next = previous_first + previous_second;
+		previous_first = previous_second;
+		previous_second = next;
+		document.write(next +'<br>');
+		}
+		};
+		fibonacci(10);
+</script>
+</html>

@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+	#f1{
+		float:left;
+		width:400px;
+		padding:10px;
+		}
+	
+	 #f2{
+		float:left;
+		width:400px;
+		padding:10px;
+		}
+	#f2 div{
+		padding:3px;
+		font-family:"Courier New", Courier, monospace;
+	   }
+	#f3{
+		float:left;
+		width:400px;
+		padding:10px;
+		}
+	#footer{
+		clear:both;
+		margin-top:30px;
+		height:300px;
+		background-color:#006;
+		color:white;
+	    }
+	#fend{
+		clear:both;
+		text-align:center;
+		
+		}
+	#f1 ul li a{
+		text-decoration:none;
+		color:white;
+		
+		
+	    }
+	#f1 ul li{
+		list-style-type:none;
+		border-bottom:1px solid #ccc;
+		padding:8px;
+		
+	    }
+	.fa{
+		padding:20px;
+		font-family:30px;
+		width:50px;
+		text-align:center;
+		text-decoration:none;
+		margin:5px 2px;
+		
+	   }
+	.fa:hover{
+		background-color:#f1f1f1;
+		color:black !important;
+		padding:16px 18;	
+		}
+	.fa-facebook{
+		background-color:#3B5998;
+		color:white;
+		}
+	.fa-twitter{
+		background-color:#0CF;
+		color:white;
+		}
+	.fa-google{
+		background-color:#33F;
+		color:white;
+		}
+	.fa-linkedin{
+		background-color:#69C;
+		color:white;
+		}
+	.fa-youtube{
+		background-color:#F00;
+		color:white;
+		}
+	.fa-instagram{
+		background-color:#30F;
+		color:white;
+		}
+	.fa-pinterest{
+		background-color:#F0F;
+		color:white;
+		}
+	.fa-snapchat-ghost{
+		background-color:#9CC;
+		color:white;
+		}
+	.fa-skype{
+		background-color:#6CF;
+		color:white;
+		}
+		
+		figcaption{
+		text-align:center;
+		margin-top:5px;}
+ #chield{
+		border:1px solid black;
+		border-radius:5px;
+		padding:10px;
+		margin-right:25px;
+		margin-top:20px;
+		width:600;
+		float:left;
+		margin-bottom:20px;
+	   
+      }
+    #img{
+		border:1px solid black;
+		border-radius:5px;
+		padding:5px;
+		margin-top:20px;
+		width:300;
+		height:300;
+		float:left
+      }
+	#sss{ 
+		width:200;
+		float:left;
+		margin-right:20px;
+		}
+	#sss ul li a{ 
+	   text-decoration:none;
+	   color:tomato; 
+	   
+	}
+	#sss ul li {
+		padding:8px 16px;
+		border-bottom:1px solid #ddd; 
+	}	
+	#sss ul{
+		list-style-type:none;
+		padding:0;
+		border:1px solid #ddd; 
+
+	}
+	
+		
+
+
+

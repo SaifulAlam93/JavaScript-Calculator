@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h3>Question 3-Finding the maximum and minimum number</h3>
+	<form>
+		<input type="text" id="userInput" placeholder="Insert one number at a time">&nbsp;
+		<br><br>
+		<input type="text" id="max">&nbsp;<input type="text" id="min">&nbsp;<input type="button" onClick="lgnum()" value="Justify">
+	</form>
+
+	<script>
+	
+		function lgnum(){				
+       		var arr = document.getElementById('userInput').value.split(",").map(Number)
+            for (j = 0; j < arr.length; j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    check = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = check;					
+                }
+                else
+                {
+                    continue;
+                }
+            }
+           document.getElementById('max').value="The maximum number is "+arr[arr.length-1];  
+			
+			for (j = 0; j < arr.length; j++)
+            {
+                if (arr[j] < arr[j + 1])
+                {
+                    check = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = check;					
+                }
+                else
+                {
+                    continue;
+                }
+            }
+           document.getElementById('min').value="The minimum number is "+arr[arr.length-1];    
+	}
+</script>
+</body>
+</html>

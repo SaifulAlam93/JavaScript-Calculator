@@ -1,0 +1,46 @@
+<html>
+<head>
+</head>
+
+<body>
+   <script>
+      var fruits=["kola","banana","ata","komla"];
+	  
+	  fruits.push("kiwi");
+	  document.write(fruits+"<br/>");
+	   fruits.pop();
+	  document.write(fruits+"<br/>");
+	  
+	  fruits.unshift("kiwi");
+	  document.write(fruits+"<br/>");
+	   fruits.shift();
+	  document.write(fruits+"<br/>");
+	  
+	  document.write("length of Array is: "+fruits.length+"<br>");
+	  var su=fruits.join("/");
+	  document.write(su+"<br>");
+	  
+	  var arr=[45,23,56,80,15];
+	  arr.sort();
+	  arr.reverse()
+	  document.write(arr+"<br>");
+	  var arr1=[45,23,56,80,15,20];
+	  arr1.reverse();
+	  document.write(arr1+"<br>");
+	  
+	  var roks=fruits.concat(arr);
+	  document.write(roks+"<br>");
+	  
+	  var arr=[45,23,56,80,15];
+	  var roks1=arr.slice(-5,-2);
+	  document.write(roks1+"<br>");
+	  
+	  fruits.splice(3,0,"jam","sohrbot");
+	  document.write(fruits+"<br>")
+	  
+	  
+
+   </script>
+  
+</body>
+</html>

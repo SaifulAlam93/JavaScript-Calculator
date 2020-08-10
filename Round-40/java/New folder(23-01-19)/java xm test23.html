@@ -1,0 +1,164 @@
+<body>
+<form id="frm" name="frm">
+<table>
+	<tr>
+		<td>Name:</td>
+        <td>
+        	<input type="text" name="name" id="name">
+            <span id="ename" name="ename"></span>
+        </td>    
+    </tr>
+	<tr>
+		<td>Email:</td>
+        <td>
+        	<input type="text" name="gender" id="cemail" value="">           
+            <span id="remail" name="remail"></span>
+        </td>    
+    </tr>    
+	<tr>
+		<td>Password:</td>
+        <td>
+        	<input type="password" name="password" id="password">
+            <span id="epassword" name="epassword"></span>
+        </td>    
+    </tr>
+	<tr>
+		<td>Retype Password:</td>
+        <td>
+        	<input type="password" name="rpass" id="rpass">
+            <span id="epass" name="epass"></span>
+        </td>    
+    </tr>
+    
+	<tr>
+		<td>Nationality:</td>
+        <td>
+        	<select id="nat" name="nat"            >
+            	<option value="">Select</option>
+            	<option value="Bangladeshi">Bangladeshi</option>
+            	<option value="Indian">Indian</option>
+            	<option 
+                value="Pakistani" >Pakistani</option>
+            	<option 
+                value="Nepali" >Nepali</option>			            
+            </select>
+            <span id="enat" name="enat"></span>
+        </td>    
+    </tr>
+    
+	<tr>
+		<td>Gender:</td>
+        <td>
+        	<input type="radio" name="gender" id="gender" value="Male">Male
+        	<input type="radio" name="gender" id="gender" value="Female">Female        	<input type="radio" name="gender" id="gender" value="Common">Common            
+            <span id="egen" name="egen"></span>
+        </td>    
+    </tr>
+    
+	<tr>
+		<td>Hobby:</td>
+        <td>
+        	<input type="checkbox" name="hoby" id="hoby" value="Eat">Eat
+        	<input type="checkbox" name="hoby" id="hoby" value="Sleep">Sleep        	<input type="checkbox" name="hoby" id="hoby" value="Study">Study            <input type="checkbox" name="hoby" id="hoby" value="Travel">Travel
+           
+            <span id="ehobby" name="ehobby"></span>
+
+        </td>    
+    </tr>                    
+	<tr>
+		<td>&nbsp;</td>
+        <td>
+        	<input type="button" name="button" id="button" value="Submit" onClick="check()">
+        </td>    
+    </tr>    
+</table>
+</form>
+</body>
+
+
+<script>
+	function check(){
+		var name = document.frm.name.value;
+		var password = document.frm.password.value;
+		var rpass = document.frm.rpass.value;
+		var nat =  document.frm.nat.value;
+		var gender =  document.frm.gender.value;
+		var cemail =  document.frm.cemail.value;				
+		var hoby = document.frm.hoby;
+		var txt = "";
+		for (i = 0; i < hoby.length; i++) {
+			if (hoby[i].checked) {
+				txt = txt + hoby[i].value + " ";
+			}
+		var msg ="";
+		var flag = 0;
+		}
+						
+		
+		if(txt==""){
+		document.getElementById("ehobby").innerHTML="Select Hobby";
+		flag = 1;
+		}
+		else {
+		document.getElementById("ehobby").innerHTML="";
+		msg += " your Hobby: "+txt+"<br/>";
+		}				
+		if(name==""){
+		document.getElementById("ename").innerHTML="Enter Name";
+		flag = 1;
+		}
+		else {
+		document.getElementById("ename").innerHTML="";
+		msg += "your name: "+name+"<br/>";
+		}
+		if(cemail==""){
+		document.getElementById("remail").innerHTML="Enter Email";
+		flag = 1;
+		}
+		else if(cemail.indexOf("@") < 0 && cemail.indexOf(".") <0){
+			document.getElementById('remail').innerHTML="Invalid Email";
+		}
+		else {
+		document.getElementById("remail").innerHTML="";
+		msg += "your Email: "+cemail+"<br/>";
+		}		
+		if(password==""){
+		document.getElementById("epassword").innerHTML="Enter Password";
+		flag = 1;
+		}
+		else if(password.length<8 || password.length>12){
+		document.getElementById("epassword").innerHTML="Password should be within 8 to 12 character";
+		flag = 1;			
+		}
+		else {
+		document.getElementById("epassword").innerHTML="";
+		}
+		if(password!=rpass){
+		document.getElementById("epass").innerHTML="Password does not match";
+		flag = 1;
+		}
+		else {
+		document.getElementById("epass").innerHTML="";
+		}
+		
+		if(nat==""){
+		document.getElementById("enat").innerHTML="Select Nationality";
+		flag = 1;
+		}
+		else {
+		document.getElementById("enat").innerHTML="";
+        msg += "your Nationaly: "+nat+"<br/>";		}
+		if(gender==""){
+		document.getElementById("egen").innerHTML="Select Gender";
+		flag = 1;
+		}
+		else {
+		document.getElementById("egen").innerHTML="";
+		msg += "your Gender: "+gender+"<br/>";
+		}
+		if(flag==0){
+		var x=window.open("","","height=200,width=500");
+	    x.document.write(msg);
+		}						
+	}
+</script>

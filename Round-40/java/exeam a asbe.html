@@ -1,0 +1,49 @@
+<body>
+	<form id="form" name="frm">
+    	<table>
+    	<tr> 
+        	<td>Name</td>
+            <td>
+            	<input type="text" name="name" /> 
+                <span name="ename" id="ename"></span> 
+            </td>
+        	</tr>
+        	<tr> 
+        	<td>password</td>
+            <td>
+            	<input type="password" name="password" />
+                <span name="epassword" id="epassword"></span>  
+            </td>
+        	</tr>
+        	<tr> 
+        	<td>&nbsp;</td>
+            <td>
+            	<input type="button" name="button" value="button" onClick="check()"/>  
+            </td>
+        </tr>
+     	</table>
+    </form>
+</body>
+<script>
+	function check(){
+		var name = document.frm.name.value;
+		if(name==""){
+			document.getElementById("ename").innerHTML="Enter Name";
+					}
+		else {
+			document.getElementById("ename").innerHTML="";
+				}
+		var password = document.frm.password.value;
+		if(password==""){
+			document.getElementById("epassword").innerHTML="Enter Password";
+						}
+	    else if (password.length<8 || password.length>12){
+	        document.getElementById("epassword").
+	        innerHTML="The password should be 8 to 12 character";
+													}
+			
+		else {
+			document.getElementById("epassword").innerHTML="";
+			}
+		}
+</script>

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.skill ul li{
+	list-style-image:url(chec.png);
+	padding: 5px;
+    }
+
+.headder3{
+	text-align:center;
+	color:green;
+    }
+	
+h2{
+	text-align:center;
+	color:Red;
+	}
+h1 {
+		text-transform: uppercase;
+		color:white;
+		text-align:center;
+		letter-spacing:5px;
+		word-spacing:10px;
+		font-size:50px;
+		
+		}
+	#benner{
+		background-image:url(1.jpg);
+		height:300px;
+		padding:10px;
+		}
+	#benner h1{
+		text-align:center;
+		margin-top:100px;}
+	#benner h3{
+		text-align:center;
+		margin-top:0px;
+		color:white;
+		}
+		#up{
+			background-color:#000;
+			color:white;
+		}
+		.tt{ color:red;}
+
+
+	
+

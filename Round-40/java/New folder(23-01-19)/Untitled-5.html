@@ -1,0 +1,55 @@
+<body>
+<form id="frm" name="frm">
+<table>
+<tr>
+		<td>Hobby:</td>
+        <td>
+        	<input type="checkbox" name="hoby" id="hoby" value="Eat">Eat
+        	<input type="checkbox" name="hoby" id="hoby" value="Sleep">Sleep        
+            <input type="checkbox" name="hoby" id="hoby" value="Study">Study           
+            <input type="checkbox" name="hoby" id="hoby" value="Travel">Travel
+           
+            <span id="ehobby" name="ehobby"></span>
+            <input type="checkbox" name="hobby" id="hobby" value="Eat">Eat
+        	<input type="checkbox" name="hobby" id="hobby" value="Travel">Travel
+            <input type="checkbox" name="hobby" id="hobby"value="Read">Read
+            <input type="checkbox" name="hobby" id="hobby" value="Sleep">Sleep
+            <input type="checkbox" name="hobby" id="hobby" value="Game">Game
+            <span id="hby" name="hby"></span>
+        </td>
+        </tr>
+        </tr>                    
+	<tr>
+		<td>&nbsp;</td>
+        <td>
+        	<input type="button" name="button" id="button" value="Submit" onClick="check()">
+        </td>    
+     </tr>  
+        </table>
+</form>
+</body>
+
+<script>
+function check(){
+        var hoby = document.frm.hoby;
+		var txt = "";
+		for (i = 0; i < hoby.length; i++){
+			if (hoby[i].checked) {
+				txt = txt + hoby[i].value + " ";
+			}
+		}
+		for (i = 0; i <hobby.length; i++){
+			if (hobby[i].checked){
+				txt + hobby[i].value + " ";
+				}
+			}
+		
+		if(txt==""){
+		document.getElementById("ehobby").innerHTML="Select Hobby";
+		flag = 1;
+		}
+		else {
+		document.getElementById("ehobby").innerHTML="";
+		}	
+		}
+</script>

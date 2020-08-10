@@ -1,0 +1,20 @@
+<p id="demo"></p>
+
+<script>
+//'our' ar obosthan ber korbo
+
+ var str= "BANGLADESH is our country";
+ var pos= str.indexOf("our");
+ document.getElementById("demo").innerHTML="first occurence" +pos;
+
+</script>
+<br/>
+<p id="demo1"></p>
+
+<script>
+// 2nd 'our' ar obosthan ber korbo
+ var str1= "BANGLADESH is our country. our country";
+ var pos1= str1.lastIndexOf("our");
+ document.getElementById("demo1").innerHTML="last occurence" +pos1;
+
+</script>

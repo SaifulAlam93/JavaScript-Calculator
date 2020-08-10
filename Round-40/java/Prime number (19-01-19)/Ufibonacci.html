@@ -1,0 +1,15 @@
+<script>
+//fibonacci bole  (1+2=3,2+3=5,3+5=8, 8+5=13, 13+8=21, 21+13 = 34 avabe cholbe)
+  function fibonacci (number) {
+	  var first = 0;
+	  second = 1; next = 1;
+	  for (var i = 2; i <= number; i++) {
+	  next = first + second;
+	  first = second;
+	  second = (next);
+	  document.write(next +"<br />");
+	  
+       }
+	  };
+     fibonacci (10);
+</script>
